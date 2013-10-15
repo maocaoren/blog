@@ -1,0 +1,13 @@
+body {
+	padding-left:10%;
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+.nav li{
+	padding-top: 4px;
+}
+.nav .active{
+	padding-top: 3px;
+}
+.article-list{
+	padding-top:10px;
+}

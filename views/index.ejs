@@ -1,0 +1,87 @@
+<{ include header }>
+    <div class="container">
+		<div class="container-left span7">
+			<h1>Welcome, my friend!</h1>
+			<p>我的博客主要是分享我在技术学习中遇到问题，</br>如果你也遇到和我同样的问题，欢迎你的留言探讨.</p>
+			<div class="">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#javascript">全部</a></li>
+					<li class=""><a href="#modals">PHP</a></li>
+					<li class=""><a href="#dropdowns">Node.js</a></li>
+					<li class=""><a href="#scrollspy">Python</a></li>
+					<li><a href="#tabs">运维</a></li>
+				</ul>
+			</div>
+			<!-- 文章列表-->
+			<div class="article-list">
+				<ul class="thumbnails">
+				  <li class="span7">
+					<div class="thumbnail">
+					  <h4>nodejs第一课学习 <code class="label label-info">node</code><code class="label label-info">PHP</code></h4>
+					  <span class="pull-right"> <h5>2013-08-30</h5></span></br>
+					  <p>nodejs第一课学习nodejs第一课学习nodejs第一课学习,nodejs第一课学习nodejs第一课学习nodejs第一课学习nodejs第一课学习
+					  nodejs第一课学习nodejs第一课学习nodejs第一课学习,nodejs第一课学习nodejs第一课学习nodejs第一课学习nodejs第一课学习
+					  nodejs第一课学习nodejs第一课学习nodejs第一课学习,nodejs第一课学习nodejs第一课学习nodejs第一课学习nodejs第一课学习
+					  </p>
+					</div>
+				  </li>
+                     <{ articles.forEach(function(article){  }>
+                        <li class="span7">
+                            <div class="thumbnail">
+                                <h4><{= article.art_title}> <code class="label label-info"><{= article.art_type}></code></h4>
+                                <span class="pull-right"> <h5><{= article.time}></h5></span></br>
+                                <p><{= article.art_intro}></p>
+                            </div>
+                        </li>
+                     <{ }) }>
+				</ul>
+				<div class="pagination">
+				  <ul>
+					<li><a href="#">前一页</a></li>
+					<li class="active">
+					  <a href="#">1</a>
+					</li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">后一页</a></li>
+				  </ul>
+				</div>
+			</div>
+		</div>
+		<div class="container-right span4" >
+			<!-- 个人信息-->
+			<div style="padding-top:80px;" class="pull-right span3">
+				<pre>个人信息</pre>
+				<div class="thumbnail">
+				  <img src="http://avatar.bbs.duowan.com/050/54/59/07_avatar_middle.jpg" alt="">
+				  <h5 >木木林人</h5>
+				  <p>缩略项标题介绍</p>
+				</div>
+			</div>
+			<!-- 个人信息-->
+			<!-- 热门文章-->
+			<div class="pull-right span3" style="padding-top:20px;"> 
+				<table class="table table-bordered ">
+					<thead>
+						<tr>
+						  <th>最新最热</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						  <td>nodejs第一课学</td>
+						</tr>
+						<tr>
+						  <td>nodejs第一课学</td>
+						</tr>
+						<tr>
+						  <td>nodejs第一课学nodejs第一课学</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- 热门文章end-->
+		</div>
+    </div> <!-- /container -->
+<{ include footer }>
